@@ -21,4 +21,6 @@ Tengo este libro en mi biblioteca desde hace décadas, y dado que en su momento 
 
 1 - [Cifrado del Cesar](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/Cesar#readme)
 
+2 - [Cifrado Inverso al del Cesar](https://github.com/VintaBytes/Cifrado-Con-Python/blob/main/Cesar%20inverso/README.md)
+
  
