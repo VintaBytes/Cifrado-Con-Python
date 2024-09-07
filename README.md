@@ -5,7 +5,7 @@ Este repositorio contendrá diferentes métodos de cifrado/descifrado implementa
 
 ## Códigos y claves secretas: Criptografía en BASIC
 
-El libro "Códigos y claves secretas: Criptografía en BASIC" de Gareth Greenwood es una introducción a los principios básicos de la criptografía, enfocada en enseñar cómo funcionan los códigos y las claves secretas a través de la programación. 
+El libro "**Códigos y claves secretas: Criptografía en BASIC**" de **Gareth Greenwood** es una introducción a los principios básicos de la criptografía, enfocada en enseñar cómo funcionan los códigos y las claves secretas a través de la programación. 
 
 <span><img src="https://github.com/user-attachments/assets/eb5f6170-69c0-47b2-b0bb-c30b4e12f6ea"/></span>
 
