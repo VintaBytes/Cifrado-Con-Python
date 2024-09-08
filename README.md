@@ -3,6 +3,7 @@ Este repositorio contendrá diferentes métodos de cifrado/descifrado implementa
 
 <span><img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue"/></span>
 
+[Indice de cifrados implementados](https://github.com/VintaBytes/Cifrado-Con-Python?tab=readme-ov-file#indice-de-cifrados-implementados)
 
 
 ## Códigos y claves secretas: Criptografía en BASIC
