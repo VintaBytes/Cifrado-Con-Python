@@ -53,8 +53,8 @@ El mensaje cifrado es: `TEKC`.
 
 | Algoritmo                         | Descripción                                      | Complejidad | Ventaja principal |
 |-----------------------------------|--------------------------------------------------|-------------|-------------------|
-| **Cifrado del César**             | Desplaza cada letra del alfabeto un número fijo. | Baja        | Fácil de implementar. |
-| **Cifrado del César inverso**     | Desplaza las letras hacia atrás en el alfabeto.  | Baja        | Variante simple del César. |
+| **[Cifrado del Cesar](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/Cesar#readme)**             | Desplaza cada letra del alfabeto un número fijo. | Baja        | Fácil de implementar. |
+| **[Cifrado Inverso al del Cesar](https://github.com/VintaBytes/Cifrado-Con-Python/blob/main/Cesar%20inverso/README.md)**     | Desplaza las letras hacia atrás en el alfabeto.  | Baja        | Variante simple del César. |
 | **Cifrado por mezcla de palabra clave** | Utiliza una palabra clave para crear un alfabeto cifrado personalizado. | Media       | Más difícil de romper que el César debido a la personalización del alfabeto. |
 
 #### Ventajas del Cifrado por mezcla de palabra clave
