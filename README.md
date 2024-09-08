@@ -23,4 +23,4 @@ Tengo este libro en mi biblioteca desde hace décadas, y dado que en su momento 
 
 2 - [Cifrado Inverso al del Cesar](https://github.com/VintaBytes/Cifrado-Con-Python/blob/main/Cesar%20inverso/README.md)
 
-3 - [Cifrado por mezcla de palabra clave](https://github.com/VintaBytes/Cifrado-Con-Python/commit/82d0026130c643704219bbb8e135bbd437b395ad)
+3 - [Cifrado por mezcla de palabra clave](https://github.com/VintaBytes/Cifrado-Con-Python/blob/main/Cifrado%20por%20mezcla%20de%20palabra%20clave/README.md)
