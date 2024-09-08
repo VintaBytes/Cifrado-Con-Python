@@ -3,6 +3,8 @@ Este repositorio contendrá diferentes métodos de cifrado/descifrado implementa
 
 <span><img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue"/></span>
 
+
+
 ## Códigos y claves secretas: Criptografía en BASIC
 
 El libro "**Códigos y claves secretas: Criptografía en BASIC**" de **Gareth Greenwood** es una introducción a los principios básicos de la criptografía, enfocada en enseñar cómo funcionan los códigos y las claves secretas a través de la programación. 
@@ -24,3 +26,5 @@ Tengo este libro en mi biblioteca desde hace décadas, y dado que en su momento 
 2 - [Cifrado Inverso al del Cesar](https://github.com/VintaBytes/Cifrado-Con-Python/blob/main/Cesar%20inverso/README.md)
 
 3 - [Cifrado por mezcla de palabra clave](https://github.com/VintaBytes/Cifrado-Con-Python/blob/main/Cifrado%20por%20mezcla%20de%20palabra%20clave/README.md)
+
+
