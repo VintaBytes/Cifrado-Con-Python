@@ -19,10 +19,13 @@ Con un desplazamiento de 3 hacia atrás (inverso al César):
 
 ### Fórmula:
 En el cifrado César normal, la fórmula para cifrar es:
+
 Nuevo Indice = ( Indice Actual + Desplazamiento ) % Tamaño del Alfabeto
 
 En el cifrado inverso al César, la fórmula sería:
+
 Nuevo Indice = ( Indice Actual - Desplazamiento ) % Tamaño del Alfabeto
+
 
 Este cifrado inverso es igual de simple que el César normal, pero en lugar de mover las letras hacia adelante en el alfabeto, las mueve hacia atrás. 
 
