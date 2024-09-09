@@ -3,14 +3,14 @@
 
 <span><img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue"/></span>
 
-El **Cifrado por mezcla de palabra clave** es un algoritmo de cifrado por sustitución monoalfabética que utiliza una palabra clave para generar un alfabeto cifrado. Este método es una mejora sobre el **Cifrado del César** y su variante inversa, ya que introduce una mayor complejidad al mezclar las letras del alfabeto basándose en una palabra clave, lo que lo hace más difícil de romper utilizando técnicas simples de criptoanálisis, como el análisis de frecuencias.
+El **Cifrado por mezcla de palabra clave** es un algoritmo de cifrado por sustitución monoalfabética que utiliza una palabra clave para generar un alfabeto cifrado. Este método es una mejora sobre el **[Cifrado del César](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/01%20-%20Cesar)** y [su variante inversa](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/02%20-%20Cesar%20inverso), ya que introduce una mayor complejidad al mezclar las letras del alfabeto basándose en una palabra clave, lo que lo hace más difícil de romper utilizando técnicas simples de criptoanálisis, como el análisis de frecuencias.
 
 Si bien no es lo suficientemente seguro para proteger información crítica en la actualidad, sigue siendo un método interesante y accesible para enseñar los conceptos fundamentales de la criptografía.
 
 
 #### Origen del método
 
-El Cifrado por mezcla de palabra clave proviene de métodos criptográficos más avanzados que el simple desplazamiento de letras utilizado en el Cifrado del César. Aunque su origen exacto no se conoce, este tipo de cifrado fue utilizado en diversas formas a lo largo de la historia. A diferencia del Cifrado del César, que utiliza un desplazamiento fijo en el alfabeto, el cifrado por mezcla introduce un factor adicional: la palabra clave, que añade variabilidad y personalización al cifrado.
+El Cifrado por mezcla de palabra clave proviene de métodos criptográficos más avanzados que el simple desplazamiento de letras utilizado en el **[Cifrado del César](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/01%20-%20Cesar)**. Aunque su origen exacto no se conoce, este tipo de cifrado fue utilizado en diversas formas a lo largo de la historia. A diferencia del **[Cifrado del César](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/01%20-%20Cesar)**, que utiliza un desplazamiento fijo en el alfabeto, el cifrado por mezcla introduce un factor adicional: **la palabra clave**, que añade variabilidad y personalización al cifrado.
 
 #### ¿Cómo funciona el Cifrado por mezcla de palabra clave?
 
