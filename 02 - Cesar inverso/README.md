@@ -4,7 +4,7 @@
 <span><img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue"/></span>
 
 
-El **Cifrado inverso del César** es una variante del [cifrado César](https://github.com/VintaBytes/Cifrado-Con-Python/blob/main/01Cesar/cifrado_cesar.py), pero en lugar de desplazar las letras hacia adelante en el alfabeto, se desplazan hacia atrás. En otras palabras, si en el cifrado de César normal se realiza un desplazamiento positivo (por ejemplo, 3 posiciones hacia la derecha), en el cifrado inverso, las letras se mueven el mismo número de posiciones pero hacia la izquierda (es decir, con un desplazamiento negativo).
+El **Cifrado inverso del César** es una variante del [cifrado César](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/01%20-%20Cesar), pero en lugar de desplazar las letras hacia adelante en el alfabeto, se desplazan hacia atrás. En otras palabras, si en el cifrado de César normal se realiza un desplazamiento positivo (por ejemplo, 3 posiciones hacia la derecha), en el cifrado inverso, las letras se mueven el mismo número de posiciones pero hacia la izquierda (es decir, con un desplazamiento negativo).
 
 ### Ejemplo:
 Con un desplazamiento de 3 hacia atrás (inverso al César):
