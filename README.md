@@ -22,10 +22,12 @@ Tengo este libro en mi biblioteca desde hace décadas, y dado que en su momento 
 
 ## Indice de cifrados implementados
 
-1 - [Cifrado del Cesar](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/Cesar#readme)
+1 - [Cifrado del Cesar](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/01%20-%20Cesar)
 
-2 - [Cifrado Inverso al del Cesar](https://github.com/VintaBytes/Cifrado-Con-Python/blob/main/Cesar%20inverso/README.md)
+2 - [Cifrado Inverso al del Cesar](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/02%20-%20Cesar%20inverso)
 
-3 - [Cifrado por mezcla de palabra clave](https://github.com/VintaBytes/Cifrado-Con-Python/blob/main/Cifrado%20por%20mezcla%20de%20palabra%20clave/README.md)
+3 - [Cifrado por mezcla de palabra clave](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/03%20-%20Cifrado%20por%20mezcla%20de%20palabra%20clave)
+
+4 - [Cifrado por mezcla de palabra clave](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/04%20-%20Cifrado%20por%20transposicion%20de%20palabra%20clave)
 
 
