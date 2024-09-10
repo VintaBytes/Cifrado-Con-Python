@@ -18,7 +18,7 @@ A lo largo del libro, Greenwood explica cómo implementar estos métodos criptog
 
 Es ideal para quienes buscan una introducción a la criptografía combinada con programación, especialmente en un lenguaje que aunque obsoleto, resulta útil para comprender la lógica detrás de estos métodos.
 
-Tengo este libro en mi biblioteca desde hace décadas, y dado que en su momento me resultó útil para aprender BASIC, voy a intentar replicar su contenido pero usando Python, con la esperanza que le resulte de utilizad a quienes están aprendiendo este lenguaje.
+Tengo este libro en mi biblioteca desde hace décadas, y dado que en su momento me resultó útil para aprender BASIC, voy a intentar replicar su contenido pero usando Python, con la esperanza que le resulte de utilidad a quienes están aprendiendo este lenguaje.
 
 ## Indice de cifrados implementados
 
