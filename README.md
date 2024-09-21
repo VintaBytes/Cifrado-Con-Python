@@ -45,6 +45,11 @@ El libro *"Códigos y claves secretas: Criptografía en BASIC"* de Gareth Greenw
 3. **Cifrado por sustitución monoalfabética**  
    - Explicación de este tipo de cifrado y su implementación en BASIC.
    - Programas para cifrar y descifrar.
+     
+     [Cifrado del Cesar](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/01%20-%20Cesar) / 
+     [Cifrado Inverso al del Cesar](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/02%20-%20Cesar%20inverso) / 
+     [Cifrado por mezcla de palabra clave](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/03%20-%20Cifrado%20por%20mezcla%20de%20palabra%20clave) / 
+     [Cifrado por transposición de palabra clave](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/04%20-%20Cifrado%20por%20transposicion%20de%20palabra%20clave)
 
 4. **Cómo descifrar una sustitución monoalfabética**  
    - Métodos para romper cifrados monoalfabéticos.
@@ -95,6 +100,6 @@ Aunque los métodos cubiertos hoy en día son bastante simples y vulnerables a t
 
 3 - [Cifrado por mezcla de palabra clave](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/03%20-%20Cifrado%20por%20mezcla%20de%20palabra%20clave)
 
-4 - [Cifrado por mezcla de palabra clave](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/04%20-%20Cifrado%20por%20transposicion%20de%20palabra%20clave)
+4 - [Cifrado por transposición de palabra clave](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/04%20-%20Cifrado%20por%20transposicion%20de%20palabra%20clave)
 
 
