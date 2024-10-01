@@ -16,15 +16,15 @@ Supongamos que queremos cifrar el mensaje "ESTE ES UN MENSAJE" utilizando un cif
 1. Escribimos el mensaje en zig-zag (rellenando por filas en el patrón):
 
 ```
-E . . S . . U . . M . . J . .
-. S . E . N . S . J . E . N .
-. . T . . . E . . . A . . A .
+E . . . . . . . U . . . E . . . J .
+. S . E . E . . . N . M . N . A . E
+. . T . . . S . . . . . . . S . . .
 ```
 
 2. Ahora, leemos las letras por filas:
-   - Fila 1: **ESUMJ**
-   - Fila 2: **SENSJEN**
-   - Fila 3: **TEAA**
+   - Fila 1: **E  UEJ**
+   - Fila 2: **SEE NMAE**
+   - Fila 3: **TS S**
 
 El mensaje cifrado correctamente sería: **"E UEJSEE NMNAETS S"**.
 
