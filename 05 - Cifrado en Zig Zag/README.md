@@ -3,9 +3,6 @@
 
 <span><img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue"/></span>
 
-El **cifrado por transposición** es un método criptográfico en el que las posiciones de las letras del mensaje original se reordenan según una regla predefinida, sin cambiar las letras en sí. A diferencia del **cifrado por sustitución** (como el  [Cifrado del Cesar](https://github.com/VintaBytes/Cifrado-Con-Python/tree/main/01%20-%20Cesar)), donde se reemplazan las letras, en los cifrados por transposición las letras permanecen igual pero se cambian de lugar.
-
-### Cifrado zig-zag:
 
 El cifrado zig-zag, también conocido como cifrado rail fence, es un tipo de cifrado por transposición en el que el mensaje se escribe en forma de zigzag en varias filas, y luego se lee fila por fila. Este método es muy visual y fácil de entender.
 
