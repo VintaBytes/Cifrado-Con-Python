@@ -13,54 +13,6 @@ El cifrado zig-zag, también conocido como cifrado rail fence, es un tipo de cif
 
 Supongamos que queremos cifrar el mensaje "ESTE ES UN MENSAJE" utilizando un cifrado zig-zag con 3 filas.
 
-1. Escribimos el mensaje en zig-zag:
-
-
-```
-E . . . S . . . U . . . M . . . J
-. S . E . N . S . J . E . S . N .
-. . T . . . E . . . A . . . A . .
-```
-
-
-Parece que no he podido localizar directamente los contenidos sobre **cifrados por transposición** y el **cifrado zig-zag** en el libro. Sin embargo, puedo ofrecerte una descripción general de lo que es el **cifrado por transposición** y cómo funciona el **cifrado zig-zag**.
-
-### **Cifrado por transposición**:
-
-El **cifrado por transposición** es un método criptográfico en el que las posiciones de las letras del mensaje original se reordenan según una regla predefinida, sin cambiar las letras en sí. A diferencia del cifrado por sustitución (como el César), donde se reemplazan las letras, en los cifrados por transposición las letras permanecen igual pero se cambian de lugar.
-
-#### **Cifrado zig-zag**:
-
-El **cifrado zig-zag**, también conocido como **cifrado rail fence**, es un tipo de cifrado por transposición en el que el mensaje se escribe en forma de zigzag en varias filas, y luego se lee fila por fila. Este método es muy visual y fácil de entender.
-
-### Ejemplo de cifrado zig-zag:
-
-Supongamos que queremos cifrar el mensaje **"ESTE ES UN MENSAJE"** utilizando un cifrado zig-zag con 3 filas.
-
-1. Escribimos el mensaje en zig-zag:
-
-```
-E . . . S . . . U . . . M . . . J
-. S . E . N . S . J . E . S . N .
-. . T . . . E . . . A . . . A . .
-```
-
-2. Leemos el mensaje fila por fila:
-   - Fila 1: **ESUMJ**
-   - Fila 2: **SENSJESN**
-   - Fila 3: **TEAA**
-
-El mensaje cifrado sería: **"ESUMJSENSJESNTEAA"**.
-
-
-¡Gracias por señalarlo! Tienes razón en que el **zig-zag** que usé en el ejemplo no era completamente preciso. Vamos a corregirlo y luego implementaremos el código en Python utilizando el alfabeto completo que incluye mayúsculas, minúsculas, números y espacios.
-
-### Corrección del cifrado **zig-zag**:
-
-Para el cifrado **zig-zag** o **rail fence**, la idea es escribir el mensaje en forma de zigzag sobre varias filas y luego leer las letras fila por fila. Cada letra del mensaje sigue un patrón de zigzag entre las filas, lo que genera el efecto de "reordenamiento" del mensaje.
-
-#### Ejemplo corregido con el mensaje "ESTE ES UN MENSAJE" y 3 filas:
-
 1. Escribimos el mensaje en zig-zag (rellenando por filas en el patrón):
 
 ```
@@ -187,15 +139,7 @@ Texto cifrado: E UEJSEE NMNAETS S
 Texto descifrado: ESTE ES UN MENSAJE
 ```
 
-Este código sigue la estructura de los ejemplos anteriores, utilizando nuestro alfabeto base. ¡Ahora el cifrado zig-zag debería estar correctamente implementado!
-
-
-
-
-
-
-
-Esta implementación sigue la misma estructura que los casos anteriores.
+Este código sigue la estructura de los ejemplos anteriores, utilizando nuestro alfabeto base y la misma estructura que los casos anteriores.
 
 [Volver al índice](https://github.com/VintaBytes/Cifrado-Con-Python/blob/main/README.md)
 
