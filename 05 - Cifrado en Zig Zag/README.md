@@ -35,9 +35,9 @@ Supongamos que queremos cifrar el mensaje "ESTE ES UN MENSAJE" utilizando un cif
 1. Escribimos el mensaje en zig-zag (rellenando por filas en el patrón):
 
 ```
-E . . . . . . . U . . . E . . . J .
-. S . E . E . . . N . M . N . A . E
-. . T . . . S . . . . . . . S . . .
+E . . .   . . . U . . . E . . . J .
+. S . E . E .   . N . M . N . A . E
+. . T . . . S . . .   . . . S . . .
 ```
 
 2. Ahora, leemos las letras por filas:
