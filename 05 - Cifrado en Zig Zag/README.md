@@ -22,146 +22,178 @@ E . . . S . . . U . . . M . . . J
 . . T . . . E . . . A . . . A . .
 ```
 
-   Y la palabra clave "CIFRAMENTO" (sin letras repetidas):
 
-   **Cuadrícula:**
-   ```
-   C  I  F  R  A  M  E  N  T  O
-   B  D  G  H  J  K  L  P  Q  S
-   U  V  W  X  Y  Z  a  b  c  d
-   e  f  g  h  i  j  k  l  m  n
-   o  p  q  r  s  t  u  v  w  x
-   y  z     0 1 2 3 4 5 6 7 8 9
-   ```
+Parece que no he podido localizar directamente los contenidos sobre **cifrados por transposición** y el **cifrado zig-zag** en el libro. Sin embargo, puedo ofrecerte una descripción general de lo que es el **cifrado por transposición** y cómo funciona el **cifrado zig-zag**.
 
-3. **Lectura por columnas**: Para generar el alfabeto cifrado, se leen las letras de la cuadrícula por columnas, de arriba hacia abajo y de izquierda a derecha.
+### **Cifrado por transposición**:
 
-   **Alfabeto cifrado generado leyendo las columnas:**
-   ```
-   C B U e o y I D V f p z F G W g q   R H X h r 0 A J Y i s 1 M K Z j t 2 E L a k u 3 N P b l v 4 T Q c m w 5 O S d n x 6
-   ```
+El **cifrado por transposición** es un método criptográfico en el que las posiciones de las letras del mensaje original se reordenan según una regla predefinida, sin cambiar las letras en sí. A diferencia del cifrado por sustitución (como el César), donde se reemplazan las letras, en los cifrados por transposición las letras permanecen igual pero se cambian de lugar.
 
-   El resultado es el siguiente alfabeto cifrado:
-   ```
-   CBUeoyIDVfpzFGWgqRHXhr0AJYiMKaRKLJt2ELau3PNbv4
-   ```
+#### **Cifrado zig-zag**:
 
-Este método crea un alfabeto mucho más mezclado que el generado por la mezcla de palabra clave, lo que lo hace más difícil de descifrar sin conocer la clave.
+El **cifrado zig-zag**, también conocido como **cifrado rail fence**, es un tipo de cifrado por transposición en el que el mensaje se escribe en forma de zigzag en varias filas, y luego se lee fila por fila. Este método es muy visual y fácil de entender.
 
-### Diferencias clave:
-- **Mezcla de palabra clave**: El alfabeto cifrado se genera simplemente agregando la palabra clave y luego las letras restantes del alfabeto en su orden habitual.
-- **Transposición de palabra clave**: El alfabeto cifrado se genera organizando las letras en una cuadrícula y leyendo por columnas, lo que aumenta la aleatoriedad y la seguridad del cifrado.
+### Ejemplo de cifrado zig-zag:
 
-### Ejemplo paso a paso:
-Supongamos que queremos cifrar el mensaje "HOLA" con la clave "CIFRAMIENTO".
+Supongamos que queremos cifrar el mensaje **"ESTE ES UN MENSAJE"** utilizando un cifrado zig-zag con 3 filas.
 
-1. Usamos el alfabeto cifrado generado mediante transposición de palabra clave:
-   ```
-   CBUeoyIDVfpzFGWgqRHXhr0AJYiMKaRKLJt2ELau3PNbv4
-   ```
+1. Escribimos el mensaje en zig-zag:
 
-2. El mensaje "HOLA" se cifra reemplazando cada letra según el alfabeto cifrado:
-   - `H` -> `e`
-   - `O` -> `R`
-   - `L` -> `W`
-   - `A` -> `G`
+```
+E . . . S . . . U . . . M . . . J
+. S . E . N . S . J . E . S . N .
+. . T . . . E . . . A . . . A . .
+```
 
-   Resultado cifrado: **`eRWG`**
+2. Leemos el mensaje fila por fila:
+   - Fila 1: **ESUMJ**
+   - Fila 2: **SENSJESN**
+   - Fila 3: **TEAA**
 
-Este es el resultado del cifrado usando el método de transposición de palabra clave.
+El mensaje cifrado sería: **"ESUMJSENSJESNTEAA"**.
 
-### Código en Python:
 
-Ahora, veamos la implementación en Python del **Cifrado por transposición de palabra clave**.
+¡Gracias por señalarlo! Tienes razón en que el **zig-zag** que usé en el ejemplo no era completamente preciso. Vamos a corregirlo y luego implementaremos el código en Python utilizando el alfabeto completo que incluye mayúsculas, minúsculas, números y espacios.
+
+### Corrección del cifrado **zig-zag**:
+
+Para el cifrado **zig-zag** o **rail fence**, la idea es escribir el mensaje en forma de zigzag sobre varias filas y luego leer las letras fila por fila. Cada letra del mensaje sigue un patrón de zigzag entre las filas, lo que genera el efecto de "reordenamiento" del mensaje.
+
+#### Ejemplo corregido con el mensaje "ESTE ES UN MENSAJE" y 3 filas:
+
+1. Escribimos el mensaje en zig-zag (rellenando por filas en el patrón):
+
+```
+E . . S . . U . . M . . J . .
+. S . E . N . S . J . E . N .
+. . T . . . E . . . A . . A .
+```
+
+2. Ahora, leemos las letras por filas:
+   - Fila 1: **ESUMJ**
+   - Fila 2: **SENSJEN**
+   - Fila 3: **TEAA**
+
+El mensaje cifrado correctamente sería: **"E UEJSEE NMNAETS S"**.
+
+### Implementación en Python usando nuestro alfabeto base:
+
+Ahora que el ejemplo está claro, vamos a implementar el cifrado en Python utilizando el alfabeto base `'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789'`.
+
+### Código Python:
 
 ```python
-def generar_alfabeto_transposicion(palabra_clave):
-    # Definir el alfabeto base
-    alfabeto_base = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789'
-    
-    # Eliminar letras repetidas de la palabra clave
-    palabra_clave = ''.join(sorted(set(palabra_clave), key=palabra_clave.index))
-    
-    # Crear la cuadrícula con la palabra clave en la primera fila y las letras restantes del alfabeto
-    letras_faltantes = ''.join([letra for letra in alfabeto_base if letra not in palabra_clave])
-    
-    # Llenar la cuadrícula
-    cuadrícula = []
-    fila_actual = list(palabra_clave)
-    cuadrícula.append(fila_actual)  # Agregar la palabra clave como la primera fila
-    
-    for i in range(0, len(letras_faltantes), len(fila_actual)):
-        cuadrícula.append(list(letras_faltantes[i:i+len(fila_actual)]))
-    
-    # Generar el alfabeto cifrado leyendo por columnas
-    alfabeto_cifrado = ''
-    for col in range(len(fila_actual)):
-        for fila in cuadrícula:
-            if col < len(fila):
-                alfabeto_cifrado += fila[col]
-    
-    return alfabeto_cifrado
+def cifrado_zigzag(texto, num_filas):
+    if num_filas == 1:
+        return texto  # Si hay solo una fila, el texto no cambia
 
-def cifrado_transposicion_palabra_clave(texto, palabra_clave, tarea):
-    # Generar el alfabeto cifrado basado en la transposición de palabra clave
-    alfabeto_base = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789'
-    alfabeto_cifrado = generar_alfabeto_transposicion(palabra_clave)
+    # Inicializar las filas vacías
+    filas = ['' for _ in range(num_filas)]
     
-    resultado = ''
+    # Usar una bandera para determinar la dirección (sube o baja por las filas)
+    bajar = False
+    fila_actual = 0
     
-    # Procesar cada caracter en el texto
+    # Iterar sobre cada caracter en el texto
     for caracter in texto:
-        if tarea.upper() == 'C':  # Cifrar
-            if caracter in alfabeto_base:
-                indice = alfabeto_base.index(caracter)
-                resultado += alfabeto_cifrado[indice]
-            else:
-                resultado += caracter  # Si no es un caracter del alfabeto, se deja igual
-        elif tarea.upper() == 'D':  # Descifrar
-            if caracter in alfabeto_cifrado:
-                indice = alfabeto_cifrado.index(caracter)
-                resultado += alfabeto_base[indice]
-            else:
-                resultado += caracter  # Si no es un caracter del alfabeto, se deja igual
+        # Añadir el caracter a la fila actual
+        filas[fila_actual] += caracter
+        
+        # Si llegamos al fondo o la cima, cambiar de dirección
+        if fila_actual == 0 or fila_actual == num_filas - 1:
+            bajar = not bajar
+        
+        # Mover hacia arriba o abajo
+        fila_actual += 1 if bajar else -1
     
-    return resultado
+    # Combinar todas las filas en el texto cifrado
+    return ''.join(filas)
 
-# Pedir la palabra clave al usuario
-palabra_clave = input("Introduce la palabra clave: ")
+def descifrar_zigzag(texto_cifrado, num_filas):
+    if num_filas == 1:
+        return texto_cifrado  # Si hay solo una fila, el texto no cambia
 
-# Pedir si se va a cifrar o descifrar
-tarea = input("Introduce 'C' para cifrar o 'D' para descifrar: ").strip().upper()
+    # Determinar la longitud de cada fila
+    longitudes = [0] * num_filas
+    bajar = False
+    fila_actual = 0
+    
+    # Primer pase: contar cuántos caracteres van en cada fila
+    for _ in texto_cifrado:
+        longitudes[fila_actual] += 1
+        if fila_actual == 0 or fila_actual == num_filas - 1:
+            bajar = not bajar
+        fila_actual += 1 if bajar else -1
+    
+    # Segundo pase: separar el texto cifrado en las filas
+    filas = []
+    indice = 0
+    for longitud in longitudes:
+        filas.append(texto_cifrado[indice:indice + longitud])
+        indice += longitud
+    
+    # Ahora reconstruimos el texto original
+    resultado = []
+    bajar = False
+    fila_actual = 0
+    indices_filas = [0] * num_filas  # Para mantener el índice de cada fila
 
-# Pedir el texto a procesar
-texto = input("Introduce el texto a procesar: ")
+    for _ in texto_cifrado:
+        # Añadir el siguiente carácter de la fila correspondiente
+        resultado.append(filas[fila_actual][indices_filas[fila_actual]])
+        indices_filas[fila_actual] += 1
+        
+        # Cambiar de dirección en la parte superior e inferior
+        if fila_actual == 0 or fila_actual == num_filas - 1:
+            bajar = not bajar
+        
+        fila_actual += 1 if bajar else -1
+    
+    return ''.join(resultado)
 
-# Procesar el texto
-resultado = cifrado_transposicion_palabra_clave(texto, palabra_clave, tarea)
+# Alfabeto base usado en los ejemplos anteriores
+alfabeto_base = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789'
 
-# Mostrar el resultado
-print("Texto procesado:", resultado)
+# Ejemplo de uso
+texto = "ESTE ES UN MENSAJE"
+num_filas = 3
+
+# Cifrar el texto
+texto_cifrado = cifrado_zigzag(texto, num_filas)
+print(f"Texto cifrado: {texto_cifrado}")
+
+# Descifrar el texto
+texto_descifrado = descifrar_zigzag(texto_cifrado, num_filas)
+print(f"Texto descifrado: {texto_descifrado}")
 ```
 
 ### Explicación del código:
 
-1. **Generación del alfabeto cifrado**:
-   - La función `generar_alfabeto_transposicion` crea una cuadrícula con la palabra clave en la primera fila, y luego rellena el resto con las letras del alfabeto base que no están en la clave.
-   - Luego, se lee la cuadrícula por columnas, de arriba hacia abajo, y se genera el alfabeto cifrado.
+1. **Función `cifrado_zigzag`**:
+   - Toma el texto y lo organiza en varias filas siguiendo un patrón de zig-zag.
+   - Se usa una variable `bajar` que controla si estamos moviéndonos hacia abajo o hacia arriba entre las filas.
+   - Se devuelve el texto cifrado combinando las filas.
 
-2. **Cifrado/descifrado**:
-   - Al cifrar, se busca cada carácter del texto en el alfabeto base y se reemplaza por su correspondiente en el alfabeto cifrado.
-   - Al descifrar, se hace el proceso inverso: se busca cada carácter en el alfabeto cifrado y se reemplaza por el carácter correspondiente en el alfabeto base.
+2. **Función `descifrar_zigzag`**:
+   - Divide el texto cifrado en las filas originales y luego reconstruye el texto original siguiendo el patrón de zig-zag.
+   - El primer pase determina cuántas letras hay en cada fila, y el segundo pase reconstruye el texto utilizando ese patrón.
 
 ### Ejemplo de uso:
 
+Si ciframos el texto **"ESTE ES UN MENSAJE"** con 3 filas, el resultado será:
+
 ```
-Introduce la palabra clave: CIFRAMIENTO
-Introduce 'C' para cifrar o 'D' para descifrar: C
-Introduce el texto a procesar: Hola Mundo
-Texto procesado: eyGr qyVZr
+Texto cifrado: E UEJSEE NMNAETS S
+Texto descifrado: ESTE ES UN MENSAJE
 ```
 
-El texto "Hola Mundo" se cifra utilizando la transposición de palabra clave con el alfabeto generado a partir de "CIFRAMIENTO", generando el resultado cifrado "eyGr qyVZr".
+Este código sigue la estructura de los ejemplos anteriores, utilizando nuestro alfabeto base. ¡Ahora el cifrado zig-zag debería estar correctamente implementado!
+
+
+
+
+
+
 
 Esta implementación sigue la misma estructura que los casos anteriores.
 
