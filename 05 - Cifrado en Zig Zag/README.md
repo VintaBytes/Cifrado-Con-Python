@@ -6,6 +6,28 @@
 
 El cifrado zig-zag, también conocido como cifrado rail fence, es un tipo de cifrado por transposición en el que el mensaje se escribe en forma de zigzag en varias filas, y luego se lee fila por fila. Este método es muy visual y fácil de entender.
 
+### Origen e historia del cifrado zig-zag:
+
+El **cifrado zig-zag** o **cifrado rail fence** es una de las formas más simples de cifrado por transposición y tiene una historia bastante antigua. Aunque no hay un registro exacto de su origen, este tipo de cifrado ha sido utilizado desde tiempos antiguos debido a su simplicidad y efectividad para proteger mensajes de espionaje o intercepción casual.Se basa en un principio de transposición, es decir, en reordenar las letras del mensaje original de manera que sea más difícil leerlo sin conocer el método de reordenamiento. Aunque no es tan conocido o sofisticado como otros métodos criptográficos históricos, se utilizó debido a su sencillez en contextos donde la seguridad no requería métodos más complejos, pero donde era necesario evitar la lectura directa del mensaje.
+
+#### **Uso en la Antigüedad**
+- Este cifrado pudo haber sido usado en formas rudimentarias desde la antigüedad, aunque no hay evidencia directa que lo conecte con civilizaciones específicas. Su naturaleza visual lo hace fácil de entender y emplear sin tecnología avanzada.
+  
+#### **Edad Media y Renacimiento**
+- Durante la Edad Media y el Renacimiento, los sistemas de cifrado por transposición como el zig-zag comenzaron a utilizarse en contextos militares y diplomáticos. Aunque no tenemos evidencia directa de que este cifrado en particular fuera predominante, los métodos de transposición eran comunes, ya que no alteraban las letras del mensaje, sino solo su orden.
+
+#### **Uso militar**
+- **Guerra Civil Estadounidense**: El cifrado rail fence (zig-zag) fue utilizado durante la Guerra Civil en los Estados Unidos para enviar mensajes de manera relativamente segura a través de telegramas. Dado que el cifrado rail fence solo reordena el mensaje, es fácil de cifrar y descifrar sin necesidad de herramientas complejas.
+  
+- **Primera y Segunda Guerra Mundial**: Aunque métodos de cifrado mucho más sofisticados se utilizaron durante las guerras mundiales, como la famosa máquina Enigma, algunos métodos de transposición más simples como el zig-zag seguían siendo útiles para comunicaciones rápidas en el campo de batalla, donde la seguridad extrema no siempre era una prioridad.
+
+#### **Aplicaciones modernas**
+Hoy en día, el cifrado rail fence es considerado un método débil y fácil de romper con las herramientas de criptoanálisis actuales. Sin embargo, se utiliza a menudo en entornos educativos para enseñar los conceptos básicos de cifrados por transposición y como un paso introductorio para aprender criptografía más avanzada.
+
+El **cifrado zig-zag** es uno de los métodos más básicos y probablemente antiguos de cifrado por transposición, utilizado debido a su sencillez. Aunque su efectividad como método seguro es limitada, su legado en la criptografía reside en su valor educativo y en su uso en situaciones donde la seguridad no era una preocupación principal, pero sí el envío rápido y claro de mensajes reordenados.
+
+
+
 ### Ejemplo de cifrado zig-zag:
 
 Supongamos que queremos cifrar el mensaje "ESTE ES UN MENSAJE" utilizando un cifrado zig-zag con 3 filas.
