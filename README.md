@@ -104,3 +104,5 @@ Aunque los métodos cubiertos hoy en día son bastante simples y vulnerables a t
 
 5 - [Cifrado zig-zag (rail fence)](https://github.com/VintaBytes/Cifrado-Con-Python/blob/main/05%20-%20Cifrado%20en%20Zig%20Zag/README.md)
 
+6 - [Cifrado por transposición de bloques](https://github.com/VintaBytes/Cifrado-Con-Python/blob/main/06%20-%20Cifrado%20por%20transposici%C3%B3n%20de%20bloques/README.md)
+
